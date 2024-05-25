@@ -18,7 +18,7 @@ export function BottomTab() {
         name="Home" 
         component={Home} 
         options={{
-          title: "Início",
+          title: "Tela Inicial",
           tabBarIcon: (props) => <AntDesign name='home' {...props} size={props.size*1.25}/>
         }}
       />
