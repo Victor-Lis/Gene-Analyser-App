@@ -1,3 +1,5 @@
 export type TabRoutes = {
-	Home: undefined
+	Home: undefined;
+	Acids: undefined;
+	Synthesis: undefined;
 }
