@@ -1,4 +1,5 @@
 export type AminoAcidoType = {
     codon: string[];
-    aminoAcido: string;
+    nome: string;
+    sigla: string;
 }

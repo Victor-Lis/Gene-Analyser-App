@@ -2,10 +2,12 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   Container: {
-    width: "90%",
+    flex: 1,
     maxHeight: 50,
-    marginHorizontal: "5%",
     marginTop: "2.5%",
+    paddingTop: 4,
+    // paddingBottom: 4,
+    paddingHorizontal: 5,
   },
   SelectBox: {
     backgroundColor: "rgba(255,255,255,1)",
@@ -15,13 +17,13 @@ export const styles = StyleSheet.create({
     marginVertical: 2,
   },
   InputBox: {
-    width: "90%",
+    flex: 1,
     flexDirection: "row",
     justifyContent: "space-around",
     alignItems: "center",
     marginHorizontal: "auto",
     marginTop: 10,
-    minHeight: 60,
+    maxHeight: 50,
     backgroundColor: "rgba(255,255,255,1)",
     paddingHorizontal: 1,
     borderRadius: 10,
@@ -36,7 +38,9 @@ export const styles = StyleSheet.create({
   },
   SelectBoxText: {
     fontSize: 17.5,  
-    color: "#999999"
+    color: "#999999",
+    width: "100%",
+    textAlign: "center"
   },
   Text: {
     fontSize: 19.5,

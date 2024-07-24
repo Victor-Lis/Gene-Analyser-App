@@ -1,8 +1,12 @@
 import { View, Text } from 'react-native';
-import Select from './Components/Select';
 import { useState } from 'react';
+
 import { BaseNitrogenadaType } from '../../@types/baseNitrogenada';
+
+import Select from './Components/Select';
 import DataBox from './Components/DataBox';
+
+import bases from '../../utils/data/basesNitrogenadas'
 
 export default function Bases() {
   const [base, setBase] = useState<BaseNitrogenadaType | null>()
@@ -10,35 +14,9 @@ export default function Bases() {
  return (
    <View style={{flex: 1, justifyContent: "center", marginBottom: "5%"}}>
     <Select
-      array={[
-        {
-          name: "Adenina",
-          connectionInDNA: "Timina",
-          connectionInRNA: "Uracila",
-        },
-        {
-          name: "Timina",
-          connectionInDNA: "Adenina",
-          connectionInRNA: null,
-        },
-        {
-          name: "Guanina",
-          connectionInDNA: "Citosina",
-          connectionInRNA: "Citosina",
-        },
-        {
-          name: "Citosina",
-          connectionInDNA: "Guanina",
-          connectionInRNA: "Guanina",
-        },
-        {
-          name: "Uracila",
-          connectionInDNA: null,
-          connectionInRNA: "Adenina",
-        },
-      ]}  
+      array={bases}  
       setItem={setBase}
-      title='Selecione a base'
+      title='Escolha'
       selected={base}      
     />  
     <DataBox item={base} connectTo='DNA'/>
