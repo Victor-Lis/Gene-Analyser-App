@@ -12,7 +12,7 @@ Esse é um app simples que fiz visando ajudar nos meus entendimentos sobre géne
 </div>
 
 ## Download
-
+[Download](https://expo.dev/accounts/dev_victor/projects/gene-analyser-app/builds/04484b3a-bb2b-47a1-9b8f-9a9a14115572)
 
 ## Futuro 
 - Pretendo em algum momento trazer uma repaginação e um novo estilo para o App.
